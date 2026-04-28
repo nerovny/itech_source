@@ -1,1 +1,7 @@
-pyserial==3.5
+customtkinter @ git+https://github.com/TomSchimansky/CustomTkinter.git@1ad3c107d88bcf1b568ed5f53e70c5f64c704bb3
+darkdetect @ git+https://github.com/albertosottile/darkdetect.git@64ce54e20be54cc41f85c8c208d35a4137b958d3
+flit_core @ git+https://github.com/pypa/flit.git@2581e6641191e573f53f6b959a7df9d4cc313c1e#subdirectory=flit_core
+packaging @ git+https://github.com/pypa/packaging.git@58aaa7fbe800087a7b7fca08e4d4a304f37c3178
+pyserial @ git+https://github.com/pyserial/pyserial.git@a5c48d445fbc1943d4fabf8d9090a50fda3172fd
+setuptools @ file:///C:/Users/anerovnyj/Documents/ITECH_Source/.venv/Source/setuptools-main
+typing_extensions @ git+https://github.com/python/typing_extensions.git@83caa5908b408560b7e30d60052c2e4da31b0556
