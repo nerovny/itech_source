@@ -3,6 +3,10 @@
 import serial
 class DeviceSource:
     """Класс источника питания."""
+    vendor_id_str = ""
+    device_id_str = ""
+    device_number_str = ""
+    device_misc_str = ""
 
     def __init__(self, serial_port: serial.Serial):
         self.serial_port = serial_port
