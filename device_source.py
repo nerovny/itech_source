@@ -1,6 +1,6 @@
+# Класс источника питания, подключенного через COM порт
+#
 import serial
-import time
-
 class DeviceSource:
     """Класс источника питания"""
 
@@ -31,19 +31,3 @@ class DeviceSource:
             self.serial_port.reset_input_buffer()
             self.serial_port.reset_output_buffer()
             self.serial_port.close()
-
-
-if __name__ == '__main__':
-    serial_port = serial.Serial()
-    serial_port.port = "COM13"
-    serial_port.baudrate = 9600
-    serial_port.timeout = 1
-    device = DeviceSource(serial_port)
-
-    if device.connect():
-        print("Подключено")
-        print('ID: ', device.request_idn())
-    else:
-        print("Ошибка подключения")
-
-    device.disconnect()
