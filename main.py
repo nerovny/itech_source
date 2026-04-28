@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
     if device.connect():
         print("Подключено")
-        print('ID: ', device.request_idn())
+        print('ID: ', device.request_idn()) # Например, ITECH Ltd.,IT6513C,800637011797810002,0.41P-0.53P
     else:
         print("Ошибка подключения")
 

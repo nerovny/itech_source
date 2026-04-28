@@ -2,7 +2,7 @@
 #
 import serial
 class DeviceSource:
-    """Класс источника питания"""
+    """Класс источника питания."""
 
     def __init__(self, serial_port: serial.Serial):
         self.serial_port = serial_port
@@ -26,7 +26,7 @@ class DeviceSource:
             return True
 
     def disconnect(self):
-        """Очистить буферы и закрыть порт устройства"""
+        """Очистить буферы и закрыть порт устройства."""
         if self.serial_port.is_open:
             self.serial_port.reset_input_buffer()
             self.serial_port.reset_output_buffer()
